@@ -16,7 +16,7 @@ pipeline {
     	}
     	stage("S3 Upload Build") {
         	steps {
-            	sh "aws s3 cp /var/lib/jenkins/workspace/pipline-boston-build/webapp/ s3://build-backup-boston --recursive"
+            	 sh "aws s3 cp /var/lib/jenkins/workspace/ s3://mpocket8 --recursive"
         	}
     	}
     	stage("Deploy DEV") {
